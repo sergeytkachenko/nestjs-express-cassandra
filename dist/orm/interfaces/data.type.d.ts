@@ -22,6 +22,7 @@ export declare type CassandraType =
   | 'inet'
   | 'time'
   | 'tuple'
+  | 'frozen'
   | 'blob';
 export declare type WithWidthColumnType =
   | 'int'
