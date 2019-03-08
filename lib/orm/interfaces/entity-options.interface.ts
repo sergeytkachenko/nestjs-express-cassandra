@@ -63,7 +63,12 @@ interface CustomIndexOptions {
 }
 
 type EsIndexPropertiesOptionsStatic<T> = {
-  [P in keyof T]?: { type?: string; index?: string; cql_collection?: string }
+  [P in keyof T]?: {
+    type?: string;
+    index?: string;
+    cql_collection?: string;
+    properties?: any;
+  }
 };
 
 interface GraphMappingOptionsStatic<Entity = any> {
